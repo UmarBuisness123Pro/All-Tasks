@@ -1,0 +1,142 @@
+/* ===== RESET & GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.header h1::before {
+  content: "Welcome to Umar FoodFun";
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.header p::before {
+  content: "Delicious food experiences, delivered fresh.";
+  display: block;
+  font-size: 1.3rem;
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+  background: #d35400;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+.navbar a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.navbar a:hover {
+  color: #f1c40f;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+section h2 {
+  text-align: center;
+  color: #d35400;
+  margin-bottom: 30px;
+}
+
+/* ===== FEATURES ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+.feature-box {
+  background: #fff3e0;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-8px);
+  background: #ffe0b2;
+}
+.feature-box i {
+  font-size: 2.5rem;
+  color: #d35400;
+  margin-bottom: 15px;
+}
+
+/* ===== ABOUT ===== */
+#about p::before {
+  content: "Umar FoodFun brings you the best culinary delights.";
+  display: block;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* ===== CONTACT ===== */
+#contact input::placeholder {
+  content: "Random User";
+}
+#contact input[type=email]::placeholder {
+  content: "randomemail@umar.com";
+}
+#contact textarea::placeholder {
+  content: "Write your delicious feedback here...";
+}
+#contact button {
+  background: #d35400;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#contact button:hover {
+  background: #a84300;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #d35400;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+footer::after {
+  content: "Copyright ©️ by Umar";
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header h1::before {
+    font-size: 2.2rem;
+  }
+}
